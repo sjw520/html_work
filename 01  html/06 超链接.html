@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--
+1. 超链可以让我们从一个页面跳到另一个页面
+
+超链接也是行内元素
+
+当我们要跳转到服务器内部页面是，一般使用相对路径
+    相对路径都会使用： ./ ../
+        ./可以省略不写 不写的默认值 当前文件所在的目录
+
+2. target属性 用来指定打开的位置
+    可选值
+        _self 默认值 在当前页面中打开超链接
+-->
+<a href="#bottom" target="_blank">去底部</a>
+
+<!--
+    页面不会跳转回到当前页面的顶部
+-->
+
+<a href="" id="bottom">回到顶部</a>
+</body>
+</html>
