@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{
+            /*width默认值auto*/
+            width: 800px;
+            height: 200px;
+            border:red solid 10px;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+
+
+        /*
+            元素在其父元素中水平方向的位置由以下几个属性共同决定
+                margin-left
+                border-left
+                padding-left
+                width
+                padding-right
+                border-right
+                margin-right
+
+                一个元素在其父元素中，水平布局必须满足以下等式
+                margin-left+border-left+padding-left+width+padding-right+border-right+margin-right = 父元素内容区的宽度（必须满足）
+                0 + 0 +0 +200 + 0 + 0 + 0 = 800
+                以上等式必须满足，如果相加结果等式不成立，则成为过度约束，则等式会自动调整
+                如果七个值没有auto的情况 则浏览器会自动调整margin-right值以使等式满足
+
+                七个值中有三个值可以设置为auto
+                width
+                margin-left
+                margin-right
+                如果某个值为auto ，则会自动调整auto那个值使等式成立
+
+                如果将一个宽度和一个外边距设置为auto，则宽度会调整到最大 设置auto的外边距会自动为0
+                如果三个值都为auto，则外边距都是0 宽度最大
+                如果两个外边距设置为auto，宽度为固定值，则会将外边距设置为相同单独值
+                    所以我们经常利用这一特点是一个元素在父元素中水平居中
+                    width:100px
+                    margin: 0 auto;
+        */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*
+                浮动元素不会盖住文字，文字会自动环绕在浮动元素的周围
+                    所以我们可以利用浮动来设置文字环绕图片效果
+            */
+            float: right;
+        }
+
+        .box2{
+            /*
+                元素设置浮动以后 从文档流中脱离 元素的特点也会发生变化
+
+                    脱离文档流特点
+                       块元素
+                        1. 块元素不在独占页面的一行
+                        2. 会院的宽度和高度默认都会被内容撑开
+                       行内元素
+                        2. 行内元素会变成块元素，特点和块元素一样
+
+                    脱离文档流以后，不需要再区分块和行内了
+            */
+            background-color: red;
+        }
+        .s1{
+            /*
+
+            */
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-color:red ;
+        }
+
+    </style>
+</head>
+<body>
+<!--    <div class="box1"></div>-->
+<!--    <p>2132312312312312312323</p>-->
+
+
+    <div class="box2">hello</div>
+    <span class="s1">12312312</span>
+</body>
+</html>

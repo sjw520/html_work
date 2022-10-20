@@ -9,10 +9,11 @@
         /* 
         子元素选择器
             选中指定父元素的指定子元素
+            只有div里的子span显示 子孙不显示
 
         */
 
-        div .box> span {
+        div.box> span {
             color: skyblue;
         }
 
@@ -22,6 +23,7 @@
         后代元素    
             选中指定元素内的指定后代
             语法：祖先 后代
+            范围更大 更深
         */
         div span{
             color: skyblue;
