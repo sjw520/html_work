@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            position: relative;
+        }
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            /* 
+                left + margin-left+border-left + padding-left + width + padding-right + border-right + margin-right + right  = 包含快内容区
+                当我们开启了绝对定位后
+                    水平方向的布局灯饰就需要添加left right两个值
+                    此时规则和之前一样只是多添了两个值
+                    
+                    当发生过度约束
+                        如果9个值没有auto 则自动调整right值
+                        如果有auto，则自动调整auto的值以使等式满足
+
+                    可设置left 和 right 的值
+                        margin width left right 
+                    
+                        因为left right的值默认是zuto，所以如果不知道left和right
+                            则灯饰不满足时，会自动调整两个值
+
+
+
+                    垂直方向布局的等式也必须满足
+                        top + margin-top/bottom + padding-top/bottom + hegiht + bottom = 包含快的高度    
+                        
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
