@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        li::before{
+            /*
+                1. 找到要设置图标的元素通过before或after
+                2. content中设置字体的编码
+                3. 设置字体的格式
+            */
+            content: "\f1b0";
+            font-family: "Font Awesome 5 free";
+            font-weight: 200;
+            color: blue;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>12</li>
+        <li>123</li>
+        <li>1234</li>
+    </ul>
+<!--
+通过实体使用图标字体
+ &#x图标编码
+-->
+<span class="fas"> &#xf1b0</span>
+</body>
+</html>

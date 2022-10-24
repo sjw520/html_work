@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+        /*    background-image 设置背景图片
+
+                如果背景图片小于元素 则背景图片会自动在元素中平铺 将元素填满
+                如果背景图片大于元素，将会一个一部分无法完全显示
+                如果背景图片和元素一样大，则会直接正常显示
+        */
+            background-image: url("./");
+            /*background-repeat
+                设置背景的重复方式
+                可选值
+                    repeat 默认值 北京会沿着x y轴方向重复
+                    repeat-x 沿着x方向重复
+                    repeat-y
+                    no-repeat 背景图片不重复
+
+            */
+            background-repeat: no-repeat;
+
+            /*background-position
+                设置背景图片的位置
+                    通过top left right bottom center 几个方位表示设置背景图片的位置
+                    同时指定两个值 一个默认center
+                 通过偏移量指定背景图片的位置
+                       水平方向 垂直方向
+            */
+            /*background-position: top right;*/
+            background-position: 100px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

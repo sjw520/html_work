@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{
+            font-size: 50px;
+            font-family: 微软雅黑;
+        /*
+            text-decoration 设置文本修饰
+                可选值
+                    none
+                    underline 下划线
+                    line-through 删除线
+                    overline 上划线
+        */
+            text-decoration: underline red dotted;
+        }
+        .box2{
+            width: 200px;
+            /*
+                设置网页如何处理空白
+                    可选值
+                        normal 正常
+                        nowrap 不换行
+                        pre 保留空白
+            */
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+<div class="box2">12312312</div>
+    <div class="box1">123123</div>
+</body>
+</html>

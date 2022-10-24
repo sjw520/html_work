@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid black;
+            /*border-spacing: 0px;
+                指定边框之间的距离
+            */
+
+            /*设置边框的合并*/
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+        /*    td默认是垂直居中 可以通过vertical-align*/
+            vertical-align: middle;
+            text-align: center;
+        }
+        /*
+            如果表格中没有使用tbody二十直接使用tr
+                那么浏览器会自动创建一个tbody,并且tr全部放到里面
+                tr不是他变了的子元素
+        */
+        tr:nth-child(odd){
+            background-color: #bbffaa;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            /*将元素设置为单元格 td*/
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: #666666;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="box2"></div>
+</div>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+</body>
+</html>
