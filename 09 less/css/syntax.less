@@ -1,0 +1,31 @@
+//注释
+.box1{
+  background-color: #bbffaa;
+  .box2{
+    background-color: #dddddd;
+  }
+  .box3{
+    background-color: #666666;
+  }
+}
+
+//变量 在变量中可以存储一个任意的值
+// 变量语法 @变量名
+@a:100px;
+@b:#bfa;
+@c:box6
+.box5{
+  //使用变量时 如果是直接则以变量名的形式使用即可
+  width: @a;
+}
+// 作为类名 或者一部分值使用时 必须以@{变量名}的形式使用
+.@{c}{
+  background-image: url("@{c}/img");
+};
+
+@d:200px;
+@d:300px;
+div{
+  //变量发生重名时 优先使用比较近的变量
+  width: @d;
+}
