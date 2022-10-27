@@ -6,6 +6,18 @@
     clear: both;
 }
 body{
-    font: 14px ;
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif4px ;
     color: #333;
+    min-width: 1226px;
+}
+
+/* 去除下划线 */
+a{
+    text-decoration: none;
+    color: #333;
+}
+/* 设置一个类 用来表示中间容器的宽度 */
+.w{
+    width: 1226px;
+    margin: 0 auto;
 }
