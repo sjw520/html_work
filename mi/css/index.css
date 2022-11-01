@@ -27,6 +27,59 @@
     float: left;
 
 }
+.app{
+    position: relative;
+}
+.app::after{
+    display: none;
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0;
+    border: 6px solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto ;
+
+}
+.app:hover .qrcode,
+.app:hover::after{
+    display: block;
+    height: 148px;
+}
+/*.app-wrapper:hover>.app .qrcode {
+    display: block;
+}*/
+/*设置下载app下拉*/
+.app .qrcode{
+    /*display: none;*/
+    position: absolute;
+    left: -40px;
+    width: 124px;
+    /*height: 148px;*/
+    height: 0;
+    overflow: hidden;
+    /*margin-left: -62px;*/
+    line-height: 1;
+    /*图片属于行内块元素 对图片没有效果*/
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    transition: height 3s;
+}
+.app .qrcode img{
+    width: 90px;
+    margin: 17px 17px;
+    margin-bottom:10px ;
+}
+.app .qrcode span{
+    font-size: 14px;
+    color: black;
+}
+
 .shop-cart,.user-info{
     float: right;
 }
@@ -46,4 +99,67 @@
 
 .shop-cart i{
     margin-right: 1px;
+}
+
+.header{
+    height: 100px;
+    background-color: #bbffee;
+}
+.header .logo{
+    float: left;
+    margin-top: 22px;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+    /*文本缩进 隐藏文字*/
+    text-indent: -999px;
+}
+.header .logo a{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 0;
+    background-color: #ff6700;
+    background-image: url("../img/mi-logo.png");
+    background-position: center;
+    transition: left .3s;
+}
+.header .logo .home{
+    background-image: url("../img/mi-home.png");
+    left: -55px;
+}
+.header .logo:hover .mi{
+    left: 55px;
+}
+.header .logo:hover .home{
+    left: 0;
+}
+/*设置中间导航条*/
+.header .nav-wrapper{
+    float: left;
+    margin-left: 7px;
+}
+.header .nav{
+    height: 100px;
+    line-height: 100px;
+    margin-left: 58px;
+}
+.nav-wrapper li{
+    float: left;
+}
+.nav-wrapper li a{
+    display: block;
+    font-size: 16px;
+    padding-left: 58px;
+
+}
+
+.nav-wrapper li a:hover{
+    color: #ff6700;
+}
+
+/*隐藏全部商品*/
+.all-goods{
+    visibility: hidden;
 }
